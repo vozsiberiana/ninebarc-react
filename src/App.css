@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: block;
+  margin: auto;
+  max-width: 450px;
 }
 
 .App-header {
@@ -11,8 +14,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border-radius: 20px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.App p {
+  font-size: small;
 }

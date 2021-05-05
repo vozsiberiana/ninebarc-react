@@ -1,14 +1,13 @@
 import React from "react";
 import "./App.css";
-import Ticket from "./Ticket";
+import Name from "./Name";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <h1>Ninebarc app</h1>
-          <Ticket />
+          <Name />
           <p>
             This project was coded by Anna Knyazkina and it's{" "}
             <a
