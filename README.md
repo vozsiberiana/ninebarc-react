@@ -1,3 +1,15 @@
+Hello, dear Ninebarc team!
+
+First of all, I would like to thank you for this nice task. It was a pleasure for me to work on it!
+
+This task, as Hans mentioned, could be done in different ways, some of them are easier, other ones are more complicated and deep. I'm aware of the fact that the solution I've chosen isn't the most effective, it could be refactored and improved, applying more advanced tecniques. However, it works :) And I've tried to think about all the possible bags and trobles that could appear from the user's side.
+
+The design part is quite clean and minimalist. I think, nowdays we recieve too much information from the world, the Internet, our devices.. and some of the apps are too "heavy", in my opinion. That's why I opt for this design.
+
+Looking forward to hearing from you. I would like to ask you to give me an honest feedback and maybe a piece of advice about improving the app, since I'm REALLY interested in growing in programming.
+
+See you soon!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
