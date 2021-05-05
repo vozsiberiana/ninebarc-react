@@ -5,6 +5,10 @@ import "./Adult.css";
 export default function Adult() {
   const [days, setDays] = useState(0);
   const [ready, setReady] = useState(false);
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
   function handleSubmit(event) {
     event.preventDefault();
     setReady(true);
@@ -22,7 +26,7 @@ export default function Adult() {
           <div className="row">
             <div className="col-9">
               <input
-                type="search"
+                type="text"
                 placeholder="Enter days here.."
                 className="form-control"
                 autoFocus="on"
@@ -38,12 +42,33 @@ export default function Adult() {
     );
   } else {
     if (days < 3) {
-      return <div className="Adult">You should buy a T1 ticket!</div>;
+      return (
+        <div>
+          <div className="Adult">😊You should buy a T1 ticket!</div>
+          <button onClick={refreshPage} className="btn btn-primary">
+            Start again
+          </button>
+        </div>
+      );
     } else {
       if (days >= 3 && days < 10) {
-        return <div className="Adult">You should buy a T2 ticket!</div>;
+        return (
+          <div>
+            <div className="Adult">🥳You should buy a T2 ticket!</div>
+            <button onClick={refreshPage} className="btn btn-primary">
+              Start again
+            </button>
+          </div>
+        );
       } else {
-        return <div className="Adult">You should buy a T3 ticket!</div>;
+        return (
+          <div>
+            <div className="Adult">🤩You should buy a T3 ticket!</div>
+            <button onClick={refreshPage} className="btn btn-primary">
+              Start again
+            </button>
+          </div>
+        );
       }
     }
   }

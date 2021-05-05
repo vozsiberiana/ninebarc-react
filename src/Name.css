@@ -1,0 +1,22 @@
+.Name .btn-primary {
+  border-radius: 30px;
+  background-color: #2b7b54;
+  border-color: white;
+  margin: 30px;
+}
+
+.Name .form-control {
+  border-radius: 30px;
+  margin: 30px;
+  padding-left: 15px;
+}
+
+.Name .btn-primary:hover {
+  background-color: #509272;
+}
+
+.Name .form-control:active,
+.Name .form-control:focus {
+  box-shadow: none;
+  border-color: #2b7b54;
+}

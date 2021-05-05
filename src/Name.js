@@ -4,7 +4,7 @@ import "./Name.css";
 
 //component that is taking care of the user's name
 export default function Name() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState("Stranger");
   const [submit, setSubmit] = useState(false);
 
   function handleSubmit(event) {
@@ -24,7 +24,7 @@ export default function Name() {
           <div className="row">
             <div className="col-9">
               <input
-                type="search"
+                type="text"
                 placeholder="Enter your name here.."
                 className="form-control"
                 autoFocus="on"

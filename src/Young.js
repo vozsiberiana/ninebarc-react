@@ -5,6 +5,9 @@ import "./Young.css";
 export default function Young() {
   const [student, setStudent] = useState(false);
   const [ready, setReady] = useState(false);
+  const refreshPage = () => {
+    window.location.reload();
+  };
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -57,11 +60,21 @@ export default function Young() {
     if (student === true) {
       return (
         <div>
-          <div className="Young">You should buy a St1 ticket!</div>
+          <div className="Young">👏You should buy a St1 ticket!</div>
+          <button onClick={refreshPage} className="btn btn-primary">
+            Start again
+          </button>
         </div>
       );
     } else {
-      return <div className="Young">You should buy a Y1 ticket!</div>;
+      return (
+        <div>
+          <div className="Young">🙌You should buy a Y1 ticket!</div>
+          <button onClick={refreshPage} className="btn btn-primary">
+            Start again
+          </button>
+        </div>
+      );
     }
   }
 }

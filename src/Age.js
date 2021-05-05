@@ -5,11 +5,15 @@ import "./Age.css";
 
 //component that asks the user for her/his age
 export default function Age(props) {
-  const [age, setAge] = useState(0);
+  const [age, setAge] = useState("");
   const [ready, setReady] = useState(false);
   function handleSubmit(event) {
     event.preventDefault();
-    setReady(true);
+    if (age === "") {
+      alert("You should type your age!");
+    } else {
+      setReady(true);
+    }
   }
 
   function handleAgeChange(event) {
@@ -23,7 +27,7 @@ export default function Age(props) {
           <div className="row">
             <div className="col-9">
               <input
-                type="search"
+                type="text"
                 placeholder="Enter your age here.."
                 className="form-control"
                 autoFocus="on"
