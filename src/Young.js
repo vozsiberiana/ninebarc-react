@@ -15,7 +15,7 @@ export default function Young() {
   }
 
   function handleStudentChange(event) {
-    if (event.target.value === "on") {
+    if (event.target.id === "1") {
       setStudent(true);
     } else {
       setStudent(false);
@@ -46,7 +46,6 @@ export default function Young() {
               name="flexRadioDefault"
               id="2"
               onChange={handleStudentChange}
-              checked
             />
             <label class="form-check-label" for="flexRadioDefault2">
               I'm not a student
