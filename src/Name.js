@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Ticket from "./Ticket";
+import Age from "./Age";
 import "./Name.css";
 
 //component that is taking care of the user's name
@@ -41,8 +41,7 @@ export default function Name() {
   } else {
     return (
       <div className="Name">
-        <h2>Nice to meet you, {name}!</h2>
-        <Ticket />
+        <Age name={name} />
       </div>
     );
   }
