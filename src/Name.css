@@ -5,6 +5,11 @@
   margin: 30px;
 }
 
+.Name .form {
+  display: block;
+  margin: 0 auto;
+}
+
 .Name .form-control {
   border-radius: 30px;
   margin: 30px;
